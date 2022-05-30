@@ -1,0 +1,42 @@
+(ns flutter-tabs.main
+  ;; pure dart package are imported using string
+  (:require ["package:flutter/material.dart" :as material]
+            ["package:flutter/widgets.dart" :as widgets]
+            ["package:flutter/painting.dart" :as painting]
+            ["package:flutter/rendering.dart" :as rendering]
+            ["dart:ui" :as ui]
+            [cljd.flutter.alpha :as flutter]))
+
+(def primaryColor
+  material.Colors/purple)
+
+(defn main []
+  (material/runApp
+   (material/MaterialApp
+    :title "Flutter tabs demo"
+    :theme (material/ThemeData :primarySwatch primaryColor)
+    :home (material/DefaultTabController
+           :length 3
+           :child (material/Scaffold
+                   :appBar (material/AppBar
+                            :title (widgets/Text "Flutter Tab Demo")
+                            :bottom (material/TabBar
+                                     :tabs [(material/Tab
+                                             :icon (widgets/Icon
+                                                    (. material/Icons directions_car)))
+                                            (material/Tab
+                                             :icon (widgets/Icon
+                                                    (. material/Icons directions_transit)))
+                                            (material/Tab
+                                             :icon (widgets/Icon
+                                                    (. material/Icons directions_bike)))]))
+                   :body (material/TabBarView
+                          :children [(material/Tab
+                                      :icon (widgets/Icon
+                                             (. material/Icons directions_car)))
+                                     (material/Tab
+                                      :icon (widgets/Icon
+                                             (. material/Icons directions_transit)))
+                                     (material/Tab
+                                      :icon (widgets/Icon
+                                             (. material/Icons directions_bike)))]))))))
