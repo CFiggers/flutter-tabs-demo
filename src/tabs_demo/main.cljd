@@ -1,4 +1,4 @@
-(ns flutter-tabs.main
+(ns tabs-demo.main
   ;; pure dart package are imported using string
   (:require ["package:flutter/material.dart" :as material]
             ["package:flutter/widgets.dart" :as widgets]

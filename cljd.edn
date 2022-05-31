@@ -1,1 +1,1 @@
-{:main flutter-tabs.main, :bin "flutter"}
+{:main tabs-demo.main, :bin "flutter"}
