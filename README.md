@@ -4,13 +4,12 @@ A new Flutter project by Caleb, following the [Work With Tabs](https://docs.flut
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Set up Dart, Flutter, and ClojureDart.
 
-A few resources to get you started if this is your first Flutter project:
+2. Clone this repo.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Initialize the project using `clj -M -m cljd.build init layout-tutorial.main`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Fire up a target device (such as an Android emulator using Android Studio).
+
+5. Start the ClojureDart watcher using `clj -M -m cljd.build flutter`.
