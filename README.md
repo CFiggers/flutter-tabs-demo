@@ -1,4 +1,4 @@
-# flutter_tabs
+# flutter-tabs-demo
 
 A new Flutter project by Caleb, following the [Work With Tabs](https://docs.flutter.dev/cookbook/design/tabs) cookbook example on the Flutter documentation website. But implemented using [ClojureDart](https://github.com/Tensegritics/ClojureDart).
 
