@@ -23,20 +23,20 @@
                             :bottom (material/TabBar
                                      :tabs [(material/Tab
                                              :icon (widgets/Icon
-                                                    (. material/Icons directions_car)))
+                                                    material.Icons/directions_car))
                                             (material/Tab
                                              :icon (widgets/Icon
-                                                    (. material/Icons directions_transit)))
+                                                    material.Icons/directions_transit))
                                             (material/Tab
                                              :icon (widgets/Icon
-                                                    (. material/Icons directions_bike)))]))
+                                                    material.Icons/directions_bike))]))
                    :body (material/TabBarView
                           :children [(material/Tab
                                       :icon (widgets/Icon
-                                             (. material/Icons directions_car)))
+                                             material.Icons/directions_car))
                                      (material/Tab
                                       :icon (widgets/Icon
-                                             (. material/Icons directions_transit)))
+                                             material.Icons/directions_transit))
                                      (material/Tab
                                       :icon (widgets/Icon
-                                             (. material/Icons directions_bike)))]))))))
+                                             material.Icons/directions_bike))]))))))
